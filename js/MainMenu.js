@@ -12,9 +12,9 @@ mainMenu.prototype = {
     create: function() {
 
         this.background = this.game.add.sprite(0, 0, 'background');
-        var title = this.game.add.text(400, 200, "Dodge the Asteroids!", {fill: '#fff'});
+        var title = this.game.add.text(400, 250, "Dodge the Asteroids!", {fill: '#fff'});
         title.anchor.set(0.5, 0.5);
-        var startButton = this.game.add.button(400,300, 'start', this.startGame, this);
+        var startButton = this.game.add.button(400,350, 'start', this.startGame, this);
         startButton.anchor.set(0.5, 0.5);
     },
 
