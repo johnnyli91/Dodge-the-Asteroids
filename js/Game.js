@@ -73,7 +73,7 @@ theGame.prototype = {
         this.scoreText.text = 'Score: ' + this.score;
 
         if (gameOver === true) {
-            this.game.state.start("GameOver", true, false, this.score)
+            this.game.state.start("GameOver", true, false, this.score);
         };
         // randomly add more enemies
         if (Math.random() > 0.999) {
