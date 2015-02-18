@@ -7,3 +7,10 @@ canvas {
 .navbar {
     border-radius: 0;
 }
+
+.center {
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}

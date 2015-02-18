@@ -7,6 +7,8 @@ mainMenu.prototype = {
         this.load.image('start', 'img/start.png');
         this.load.image('restart', 'img/restart.png');
         this.load.image('background', 'img/background.png');
+        this.load.image('fastEnemy', 'img/asteroid1.png');
+        this.load.image('slowEnemy', 'img/asteroid2.png');
     },
 
     create: function() {
@@ -19,6 +21,6 @@ mainMenu.prototype = {
     },
 
     startGame: function() {
-        this.game.state.start("Game");
+        this.game.state.start("Game", true, false, "");
     }
 };
