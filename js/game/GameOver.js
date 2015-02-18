@@ -28,6 +28,6 @@ gameOver.prototype = {
   },
 
   startGame: function() {
-    this.game.state.start("MainMenu");
+    this.game.state.start("MainMenu", true, true);
   }
 }
