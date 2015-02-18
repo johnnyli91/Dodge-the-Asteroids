@@ -14,7 +14,7 @@ gameOver.prototype = {
         console.log(data);
       },
       error: function(error) {
-        alert("Error in recording the score. Please try again later.");
+        console.log("Error in recording the score. Please try again later.");
       }
     });
   },

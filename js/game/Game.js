@@ -1,5 +1,5 @@
 var theGame = function(game) {
-  this.numOfEnemies = 15;
+  this.numOfEnemies = 10;
 }
 
 theGame.prototype = {
