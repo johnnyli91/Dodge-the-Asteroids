@@ -19,7 +19,7 @@ angular.module("dodgeasteroidsApp")
     }
   })
   .controller("HighscoresController", function ($scope, $http) {
-    $http.get('http://localhost:8000/api/play/')
+    $http.get('http://ec2-52-10-161-244.us-west-2.compute.amazonaws.com/api/play/')
       .success(function (data) {
         $scope.scores = data;
       })

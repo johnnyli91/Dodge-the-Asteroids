@@ -6,7 +6,7 @@ gameOver.prototype = {
     this.score = score;
     $.ajax({
       type: "POST",
-      url: "http://localhost:8000/api/play/create/",
+      url: "http://ec2-52-10-161-244.us-west-2.compute.amazonaws.com/api/play/create/",
       data: JSON.stringify({"score": this.score, "game":"dodge_the_asteroids"}),
       dataType: "json",
       contentType: "application/json; charset=utf-8",
