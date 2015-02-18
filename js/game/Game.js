@@ -114,7 +114,9 @@ theGame.prototype = {
       }
     };
     if (this.track) {
+      if (this.trackingEnemy.body.velocity && this.star.body.velocity) {
         this.game.physics.arcade.moveToObject(this.trackingEnemy, this.star, 100)
+      }
     }
   }
 }
