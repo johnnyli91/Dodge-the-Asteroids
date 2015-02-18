@@ -80,7 +80,7 @@ theGame.prototype = {
       this.game.state.start("GameOver", true, false, this.score);
     };
     // randomly add more enemies
-    if (Math.random() > 0.999) {
+    if (Math.random() > 0.99) {
       rng = Math.random();
       if (rng <= 0.33) {
         this.enemy = this.enemies.create(this.getRandomInt(0,800), this.getRandomInt(0,600), 'enemy');
