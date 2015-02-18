@@ -75,8 +75,6 @@ theGame.prototype = {
     this.scoreText.text = 'Score: ' + this.score;
 
     if (gameOver === true) {
-      this.enemies.destroy();
-      this.enemies = null;
       this.game.state.start("GameOver", true, false, this.score);
     };
     // randomly add more enemies
