@@ -1,2 +1,2 @@
 "use strict";
-angular.module("dodgeasteroidsApp", ["ngRoute"] )
+angular.module("dodgeasteroidsApp", ["ngRoute"]);
