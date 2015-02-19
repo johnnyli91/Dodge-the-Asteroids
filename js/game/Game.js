@@ -1,17 +1,14 @@
-var theGame = function(game) {
-  this.numOfEnemies = 10;
-}
+var theGame = function(game) {};
 
 theGame.prototype = {
   // generates random interger
-  init: function (data) {
-    this.track = false;
-  },
   getRandomInt: function (min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
   },
 
   create: function () {
+    this.numOfEnemies = 10;
+    this.track = false;
     this.score = 0;
     this.gameOver = false;
     this.game.physics.startSystem(Phaser.Physics.ARCADE);

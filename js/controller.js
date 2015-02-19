@@ -5,12 +5,13 @@ angular.module("dodgeasteroidsApp")
     $httpProvider.defaults.useXDomain = true;
     delete $httpProvider.defaults.headers.common['X-Requested-With'];
   })
-  .controller("GameController", function ($scope, $http, $window) {
+  .controller("GameController", function ($scope, $http) {
 
     $scope.game = function () {
     var game = new Phaser.Game(800, 600, Phaser.AUTO, 'game');
 
     game.state.add('MainMenu', mainMenu);
+    game.state.add('Instructions', instructions);
     game.state.add('Game', theGame);
     game.state.add('GameOver', gameOver);
 
