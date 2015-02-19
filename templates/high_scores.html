@@ -1,11 +1,12 @@
-<h1 class="center">High Scores</h1>
-<h2 class="center">Top 10</h2>
-<ol class="center list-unstyled">
-  <li ng-repeat="item in scores | orderBy:'score':true | limitTo:10">{{ item.score }}</li>
+<h2 class="center">Top 10 Scores</h2>
+<ol class="center list-group">
+  <li ng-repeat="item in scores | orderBy:'score':true | limitTo:10" class="list-group-item">
+    {{ item.score }}</li>
 </ol>
 <br>
 <h2 class="center">Most Recent Scores</h2>
-<ol class="center list-unstyled">
-  <li ng-repeat="item in scores | orderBy:'id':true | limitTo:10">{{ item.score }}</li>
+<ol class="center list-group">
+  <li ng-repeat="item in scores | orderBy:'id':true | limitTo:10" class="list-group-item">
+    {{ item.score }}</li>
 </ol>
 
