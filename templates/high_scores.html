@@ -1,13 +1,15 @@
-<div class="row">
-  <ol class="col-sm-4 col-md-offset-1 list-group list-unstyled">
-    <li class="list-group-item center"><h2>Top 10 Scores</h2></li>
-    <li ng-repeat="item in scores | orderBy:'score':true | limitTo:10" class="list-group-item center">
-    {{ item.score }}</li>
-  </ol>
-  <ol class="col-sm-4 col-md-offset-2 list-group">
-    <li class="list-group-item center"><h2>Most Recent Scores</h2></li>
-    <li ng-repeat="item in scores | orderBy:'id':true | limitTo:10" class="list-group-item center">
-    {{ item.score }}</li>
-  </ol>
+<div class="container-fluid">
+  <div class="row">
+    <ol class="col-sm-4 col-md-offset-1 list-group list-unstyled">
+      <li class="list-group-item center"><h2>Top 10 Scores</h2></li>
+      <li ng-repeat="item in scores | orderBy:'score':true | limitTo:10" class="list-group-item center">
+      {{ item.score }}</li>
+    </ol>
+    <ol class="col-sm-4 col-md-offset-2 list-group">
+      <li class="list-group-item center"><h2>Most Recent Scores</h2></li>
+      <li ng-repeat="item in scores | orderBy:'id':true | limitTo:10" class="list-group-item center">
+      {{ item.score }}</li>
+    </ol>
+  </div>
 </div>
 
