@@ -1,2 +1,2 @@
 # Dodge the Asteroids
-The highscores table for Dodge the Asteroids built with Django REST framework.
+My first game with the Phaser framework witha  Django back end for the high scores table.
