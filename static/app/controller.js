@@ -8,14 +8,14 @@ angular.module("dodgeasteroidsApp")
   .controller("GameController", function ($scope, $http) {
 
     $scope.game = function () {
-    var game = new Phaser.Game(800, 600, Phaser.AUTO, 'game');
+      var game = new Phaser.Game(800, 600, Phaser.AUTO, 'game');
 
-    game.state.add('MainMenu', mainMenu);
-    game.state.add('Instructions', instructions);
-    game.state.add('Game', theGame);
-    game.state.add('GameOver', gameOver);
+      game.state.add('MainMenu', mainMenu);
+      game.state.add('Instructions', instructions);
+      game.state.add('Game', theGame);
+      game.state.add('GameOver', gameOver);
 
-    game.state.start('MainMenu');
+      game.state.start('MainMenu');
 
     }
   })

@@ -1,0 +1,5 @@
+Django==1.7
+psycopg2==2.5.4
+Fabric==1.10.0
+djangorestframework==3.0.4
+django-cors-headers

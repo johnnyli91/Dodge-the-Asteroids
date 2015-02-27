@@ -2,15 +2,15 @@ var mainMenu = function(game) {};
 
 mainMenu.prototype = {
   preload: function () {
-    this.load.image("star", "img/star.png");
-    this.load.image("enemy", "img/asteroid.png");
-    this.load.image("start", "img/start.png");
-    this.load.image("restart", "img/restart.png");
-    this.load.image("instructions", "img/instructions.png");
-    this.load.image("back", "img/back.png");
-    this.load.image("background", "img/background.png");
-    this.load.image("fastEnemy", "img/asteroid1.png");
-    this.load.image("slowEnemy", "img/asteroid2.png");
+    this.load.image("star", "assets/img/star.png");
+    this.load.image("enemy", "assets/img/asteroid.png");
+    this.load.image("start", "assets/img/start.png");
+    this.load.image("restart", "assets/img/restart.png");
+    this.load.image("instructions", "assets/img/instructions.png");
+    this.load.image("back", "assets/img/back.png");
+    this.load.image("background", "assets/img/background.png");
+    this.load.image("fastEnemy", "assets/img/asteroid1.png");
+    this.load.image("slowEnemy", "assets/img/asteroid2.png");
   },
 
   create: function () {

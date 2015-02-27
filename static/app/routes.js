@@ -2,11 +2,11 @@
 angular.module("dodgeasteroidsApp").config(function ($routeProvider) {
   $routeProvider
     .when("/game", {
-      templateUrl: "templates/game.html",
+      templateUrl: "app/views/game.html",
       controller: "GameController"
     })
     .when("/highscores", {
-      templateUrl: "templates/high_scores.html",
+      templateUrl: "app/views/high_scores.html",
       controller: "HighscoresController"
     })
     .otherwise({redirectTo: "/game"});
